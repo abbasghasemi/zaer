@@ -1,16 +1,20 @@
-# zaer
+# Zaer
 
-Mokebdaran zaer hosseini
+Mokebdaran zaeran hosseini
 
-## Getting Started
+## تصاویر محیط برنامه 
 
-This project is a starting point for a Flutter application.
+![](https://raw.githubusercontent.com/abbasghasemi/zaer/refs/heads/master/assets/s1.jpg)
+![](https://raw.githubusercontent.com/abbasghasemi/zaer/refs/heads/master/assets/s2.jpg)
+![](https://raw.githubusercontent.com/abbasghasemi/zaer/refs/heads/master/assets/s3.jpg)
 
-A few resources to get you started if this is your first Flutter project:
+## توضیحات 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+برنامه ای تحت ویندوز برای مدیریت زائران اربعین
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# امکانات 
+
+* امکان ایجاد/ویرایش/حذف زائر
+* امکان جستجوی زائر یا اقامت ها بر اساس کد ملی،تاریخ یا شماره تلفن
+* مشاهده لیست افراد اتمام مدت اقامت
+* امکان ایجاد/ویرایش اقامت برای زائران

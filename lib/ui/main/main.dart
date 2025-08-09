@@ -72,17 +72,29 @@ class _MainActivityState extends State<MainActivity> {
                 title: const Text('آیا می خواهید از برنامه خارج شوید؟'),
                 actions: [
                   AlphaButton(
+                    size: Size(80, 42),
                     bgColor: theme.primaryColor,
                     onTap: () {
                       context.read<DatabaseController>().close();
                       Navigator.of(context).pop(true);
                     },
-                    child: const Text('بله'),
+                    child: Text(
+                      'بله',
+                      style: theme.textTheme.titleMedium!.apply(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                   AlphaButton(
-                    bgColor: theme.primaryColor,
+                    size: Size(80, 42),
+                    border: Border.all(color: theme.primaryColor),
                     onTap: () => Navigator.of(context).pop(false),
-                    child: const Text('خیر'),
+                    child: Text(
+                      'خیر',
+                      style: theme.textTheme.titleMedium!.apply(
+                        color: theme.primaryColor,
+                      ),
+                    ),
                   ),
                 ],
               );
@@ -406,9 +418,7 @@ class _MainActivityState extends State<MainActivity> {
                 context.mounted &&
                 result.paths.first != null &&
                 result.paths.first!.isNotEmpty) {
-              context.read<MainCubit>().onMessage?.call(
-                "در حال بارگذاری...",
-              );
+              context.read<MainCubit>().onMessage?.call("در حال بارگذاری...");
               await context.read<DatabaseController>().loadCSV(
                 result.paths.first!,
                 false,
